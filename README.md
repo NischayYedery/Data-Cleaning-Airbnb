@@ -43,5 +43,17 @@ Save the result as Cleaned_data.csv and delete all temporary variables to free m
 Numeric columns now behave like numbers – no stray “$” or commas.
 Outliers flagged rather than silently removed, preserving transparency.
 
+Some of the Key pandas functions & methods you’ll see in the notebook
+
+pd.read_csv()            # ingest the raw file
+DataFrame.rename()       # column-name cleanup
+DataFrame.dropna()       # remove rows missing critical fields
+DataFrame.replace()      # strip "$", "," and unify categories
+DataFrame.astype()       # cast to int, float, bool, datetime
+DataFrame.apply()        # custom lambdas (e.g., price clipping)
+Series.isna()            # detect remaining nulls
+DataFrame.duplicated()   # find duplicate listings
+
+
 
 
